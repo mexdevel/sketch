@@ -1,52 +1,65 @@
-body {
-    background-color: gainsboro;
-    background-size: 100% 120%;
+
+.grid {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 70vh;
+    height: 80vw;
+    max-height: 70vh;
+    font-size: 1rem;
+    border-color: black;
+    border: solid;
 }
-h1 {box-sizing: border-box;
+
+.row {
+    display: flex;
+}
+
+.box {
+    background: white;
+    flex: 1 0 auto;
     position: relative;
-    margin: 2% 36.5%;
-    background-color: white;
-    border: 1px solid black;
-    width: 500px;
+    border: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+.box:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+
+.box .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 111px;
+    height: 111px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 11px;
+   
+        
+}
+
+p{
     text-align: center;
-    font-family: Georgia;
-    text-shadow: 2px 2px 8px black;
+}
+
+#colorBtn {
+    background-image: url('bgridc.png');  
     
 }
-#container{
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    height: 700px;
-    width: 700px;
-    box-shadow: 5px 8px #888888;
-    border: 1px solid gray;
-}
-.pixel{
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-    padding: 0 auto;
-    background-color: white;
-}
 
-.buttons {
-    margin: 3% auto;
-    text-align: center;
-}
-
-.btn {
-    margin: 0 5%;
-    height: 30px;
-    background-color: black;
-    color:white;
-    font-family: sans-serif;
-    width: auto;
-    border-color: black;
-    transition: 0.3s;
-    font-weight: bold;
-}
-.btn:hover {
-    box-shadow: 3px 3px gray;
-    transform: translate3d(-3px,-5px,0);
+#newBtn {
+    background-image: url('bgrid.png');    
 }
