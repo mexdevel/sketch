@@ -47,19 +47,24 @@ button {
     font-size: 2em;
     font-weight: bold;
     margin: 11px;
-   
-        
+            
 }
 
 p{
     text-align: center;
+    
 }
 
 #colorBtn {
-    background-image: url('bgridc.png');  
+    background: url('bgridc.png');  
     
 }
 
 #newBtn {
-    background-image: url('bgrid.png');    
+    background: url('bgrid.png');    
+}
+
+html {
+    background: url('back.png');
+    background-size: cover;
 }
